@@ -1,0 +1,21 @@
+﻿
+<div class="panel panel-primary" ng-controller="searchCtrl as ppl">
+    <div class="panel-heading"
+         style="font-size:large">
+        People Search   
+        <input type="search" ng-model="ppl.searchText" placeholder="Enetr search query" ng-change="getData()"/>
+        <input type="button" value="Search" ng-click="applyFilter()" />
+    </div>
+
+    <div class="panel-body">
+        Total Found : {{ (filtered.length == null ? 0 : filtered.length )  }}
+        <div class="resultContainer">
+            <div ng-repeat="popl in filtered = ( ppl.people | filter:{name: ppl.searchText})"
+                    ng-class="{'tileRed': popl.gender == 'F', 'tile': popl.gender == 'M'}">
+                <h3>{{ popl.name }}</h3>
+                {{ popl.email }}<br />
+                {{ popl.city}}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Sample People Search</title>
+
+    <!-- Style sheets -->
+    <link href="app/css/bootstrap.css" rel="stylesheet" />
+    <link href="app/css/style.css" rel="stylesheet" />
+</head>
+
+<body ng-app="peopleSearch">           
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">Address Book</div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div ng-include="'app/views/peopleSearch.html'"></div>
+    </div>
+
+    <!-- Library Scripts -->
+    <script src="app/js/angular.js"></script>
+   
+    <!-- Application Script -->
+    <script src="app/app.js"></script>
+
+    <!-- People Controllers -->
+    <script src="app/controllers/peopleController.js"></script>
+</body>
+
+</html>

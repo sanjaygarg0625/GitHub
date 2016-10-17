@@ -1,0 +1,38 @@
+﻿.tile {
+    margin-top:5px;
+    margin-left:8px;
+    padding-top:1px;
+    border:solid; 
+    border-color:blue;
+    padding:4px;
+    width:18em;
+    float:left;
+}
+
+.tileRed {
+    margin-top:5px;
+    margin-left:8px;
+    border:solid; 
+    border-color:red; 
+    padding:4px;
+    width:18em;
+    float:left;
+}
+
+
+.mainFrame {
+    border:solid;
+    border-color:black;
+    padding: 5px;
+    align-content:center;
+}
+
+.resultContainer {
+    width:80em;
+    /*border:solid;
+    border-color:black;*/
+}
+
+.panel-heading input {
+    color:black;
+}
